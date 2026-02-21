@@ -26,10 +26,7 @@ async def start(_, m: Message):
 # ================= PRIVATE COMMAND =================
 @bot.on_message(filters.command("jaanu"))
 async def jaanu(bot: Client, m: Message):
-
-    if m.from_user.id not in ALLOWED_USERS:
-        return
-
+    
     # TXT FILE
     q1 = await bot.ask(m.chat.id, "📄 TXT file upload karo")
     txt_path = await q1.download()
