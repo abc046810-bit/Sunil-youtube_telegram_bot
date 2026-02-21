@@ -7,9 +7,11 @@ from pyrogram.types import Message
 from pyromod import listen
 
 # ================== BOT CONFIG ==================
-API_ID = 123456        # <-- अपना API_ID
-API_HASH = "API_HASH"  # <-- अपना API_HASH
-BOT_TOKEN = "BOT_TOKEN"  # <-- अपना BOT_TOKEN
+import os
+
+API_ID = int(os.environ["API_ID"])
+API_HASH = os.environ["API_HASH"]
+BOT_TOKEN = os.environ["BOT_TOKEN"]
 
 bot = Client(
     "yt_pdf_bot",
