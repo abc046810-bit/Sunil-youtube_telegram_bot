@@ -1,5 +1,6 @@
-pyrogram
-tgcrypto
-pyromod
-yt-dlp
-wget
+pyrogram==2.0.106
+pyromod==2.0.2
+yt-dlp==2024.8.6
+cloudscraper==2.1.0
+aiohttp==3.9.5
+TgCrypto==1.2.5
